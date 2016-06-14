@@ -13,7 +13,8 @@
 }
 
 input:focus, textarea:focus, button:focus {
-  outline: none; }
+  outline: none;
+}
 
 .purplehead{
 margin: auto;
