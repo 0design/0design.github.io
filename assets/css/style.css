@@ -40,7 +40,7 @@ a {
   text-decoration: none; }
 
 body {
-  background-image:url('assets/img/bg.png') no-repeat top left;
+  background-image: url("assets/img/bg.png");
   background-size: 360px 360px;
   margin: 0px;
 }
