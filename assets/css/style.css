@@ -1,49 +1,40 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,800);
-@font-face {
-    font-family: 'League Spartan';
-    src: url('leaguespartan-bold.eot');
-    src: url('leaguespartan-bold.eot?#iefix') format('embedded-opentype'),
-         url('leaguespartan-bold.woff2') format('woff2'),
-         url('leaguespartan-bold.woff') format('woff'),
-         url('leaguespartan-bold.ttf') format('truetype'),
-         url('leaguespartan-bold.svg#league_spartanbold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-
-}
-
 input:focus, textarea:focus, button:focus {
-  outline: none;
-}
+  outline: none; }
 
-.purplehead{
-margin: auto;
-height: 148px;
-width: auto;
-background-image: linear-gradient(#4F173C 0%,#210B19 100%);
-}
+.dtext {
+  position: relative;
+  color: #fff;
+  font-family: 'League Spartan';
+  font-weight: 300;
+  font-size: 18px;
+  padding-top: 1px;
+  margin: 16px; }
 
-.zero{
+.purplehead {
+  margin: auto;
+  height: 148px;
+  width: auto;
+  background-image: linear-gradient(#4F173C 0%, #210B19 100%); }
+
+.zero {
   padding-top: 16px;
   font-family: 'League Spartan';
   font-size: 60px;
-  color: #fff;
-}
+  color: #fff; }
 
-.subzero{
+.subzero {
   font-family: 'League Spartan';
-  font-size: 18px;
-  color: #FF6E0F;
-}
+  font-size: 16px;
+  color: #FF6E0F; }
 
 a {
   text-decoration: none; }
 
 body {
-  background-image: url("assets/img/bg.png");
-  background-size: 360px 360px;
-  margin: 0px;
-}
+  background-image: url("/assets/img/bg.png");
+  background-size: 240px 240px;
+  margin: 0px; }
 
 .header-fixed {
   background: #333;
@@ -76,14 +67,6 @@ body {
 
 img {
   position: static; }
-
-.dtext {
-  position: relative;
-  font-family: Roboto,Helvetica,sans-serif;
-  font-weight: 300;
-  font-size: 18px;
-  padding-top: 1px;
-  margin: 16px; }
 
 .card {
   display: inline-block;
@@ -269,6 +252,8 @@ hr {
 
 /* MOBILE RULES */
 @media only screen and (max-width: 768px) {
+  body {
+    background-size: 180px 180px; }
   .footer {
     font-size: 16px;
     position: relative; }
@@ -277,14 +262,12 @@ hr {
     width: auto;
     margin: auto; }
   .blogcontainer {
-    width: 90%; }
+    width: 100%; }
   .blogcontainer img {
-    max-width: 100%;
-    transform: scale(1.125, 1.125);
-    padding-top: 32px;
-    margin-left: 0px;
-    padding-bottom: 12px; }
+    max-width: 100%; }
   .blogtxt {
+    margin: auto;
+    width: 90%;
     font-size: 16px; }
   .scale75 {
     transform: none; }
