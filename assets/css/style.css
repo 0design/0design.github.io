@@ -32,7 +32,7 @@ background-image: linear-gradient(#4F173C 0%,#210B19 100%);
 
 .subzero{
   font-family: 'League Spartan';
-  font-size: 24px;
+  font-size: 18px;
   color: #FF6E0F;
 }
 
@@ -82,7 +82,8 @@ img {
   font-family: Roboto,Helvetica,sans-serif;
   font-weight: 300;
   font-size: 18px;
-  margin: 32px; }
+  padding-top: 1px;
+  margin: 16px; }
 
 .card {
   display: inline-block;
