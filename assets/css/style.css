@@ -2,6 +2,9 @@
 input:focus, textarea:focus, button:focus {
   outline: none; }
 
+a {
+  text-decoration: none; }
+
 .dtext {
   position: relative;
   color: #fff;
@@ -34,8 +37,8 @@ input:focus, textarea:focus, button:focus {
   color: #FF6E0F; }
 
 body {
-  background-image: url("http://gyanl.github.io/zerodesign/assets/img/bg.png");
-  background-size: 240px 240px;
+  background-image: url("../../assets/img/bg.png");
+  background-size: 361px 361px;
   margin: 0px; }
 
 .header-fixed {
