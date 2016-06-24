@@ -132,6 +132,21 @@ body {
   line-height: 1.2;
   letter-spacing: -.003em; }
 
+.blogtitle2 {
+  padding-top: 60px;
+  margin: auto;
+  width: 710px;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: Roboto,Helvetica,sans-serif;
+  letter-spacing: .01rem;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 1.2;
+  letter-spacing: -.003em; }
+
 .blogsubtitle {
   margin: auto;
   width: 710px;
@@ -275,6 +290,10 @@ hr {
     margin: auto; }
   .blogtitle {
     padding-top: 60px;
+    width: 90%;
+    margin: auto; }
+  .blogtitle2 {
+    padding-top: 40px;
     width: 90%;
     margin: auto; }
   .blogsubtitle {
