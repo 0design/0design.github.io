@@ -73,6 +73,7 @@ body {
 
 .blogcontainer img {
   margin: auto;
+  padding-top: 16px;
   width: 720px; }
 
 .Gyan {
@@ -113,7 +114,7 @@ body {
   font-size: 18px;
   position: relative;
   text-align: center;
-  padding: 4px;
+  padding-top: 4px;
   margin-bottom: 6px;
   color: rgba(0, 0, 0, 0.75); }
 
@@ -133,7 +134,7 @@ body {
   letter-spacing: -.003em; }
 
 .blogtitle2 {
-  padding-top: 60px;
+  padding-top: 48px;
   margin: auto;
   width: 710px;
   color: #333;
@@ -177,8 +178,21 @@ body {
   line-height: 1.5;
   margin: auto;
   width: 710px;
-  padding-top: 16px;
-  padding-bottom: 16px; }
+  padding-top: 16px; }
+
+.blogtxt .imgdesc {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: Roboto,Helvetica,sans-serif;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.6);
+  margin: auto;
+  width: 640px;
+  padding-top: 8px; }
 
 .blogcontainer a {
   color: #3B58C4;
