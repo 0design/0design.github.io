@@ -38,6 +38,7 @@ a {
 
 body {
   background-image: url("../../assets/img/bg.png");
+  background-attachment: fixed;
   background-size: 361px 361px;
   margin: 0px; }
 
@@ -73,7 +74,8 @@ body {
 
 .blogcontainer img {
   margin: auto;
-  padding-top: 16px;
+  border-radius: 3px;
+  margin-top: 24px;
   width: 720px; }
 
 .Gyan {
@@ -301,7 +303,8 @@ hr {
     margin: auto; }
   .blogcontainer img {
     width: 100%;
-    margin: auto; }
+    margin: auto;
+    border-radius: 0px; }
   .blogtitle {
     padding-top: 60px;
     width: 90%;
@@ -323,6 +326,8 @@ hr {
     font-size: 16px;
     padding-top: 14px;
     padding-bottom: 20px; }
+  .blogtxt .imgdesc {
+    width: auto; }
   .scale75 {
     transform: none; }
   .header-fixed p {
