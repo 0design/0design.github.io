@@ -295,7 +295,7 @@ hr {
   body {
     background-size: 120px 120px; }
   .footer {
-    font-size: 16px;
+    font-size: 12px;
     position: relative; }
   .Gyan {
     margin-left: auto;
@@ -310,7 +310,7 @@ hr {
     width: 90%;
     margin: auto; }
   .blogtitle2 {
-    padding-top: 40px;
+    padding-top: 20px;
     width: 90%;
     margin: auto; }
   .blogsubtitle {
@@ -324,10 +324,11 @@ hr {
     margin: auto;
     width: 90%;
     font-size: 16px;
-    padding-top: 14px;
+    padding-top: 10px;
     padding-bottom: 20px; }
   .blogtxt .imgdesc {
-    width: auto; }
+    width: auto;
+    margin: 12px; }
   .scale75 {
     transform: none; }
   .header-fixed p {
@@ -339,4 +340,8 @@ hr {
     padding-bottom: 10px; }
   hr {
     margin: 30px;
-    margin-top: 36px; } }
+    margin-top: 36px; }
+  .heart {
+    display: inline;
+    font-size: 12px;
+    color: #e74c3c; } }
