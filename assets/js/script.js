@@ -12,7 +12,30 @@
 
   win.onscroll = function(){
      var sTop = (this.pageYOffset || docEl.scrollTop)  - (docEl.clientTop || 0);
-     $logo.style.fontSize =  sTop > 100 ? "0":"32px" ;
+     $logo.style.fontSize =  sTop > 10 ? "0":"32px" ;
   };
 
   window.onload = init();
+
+$work = document.getElementById('work');
+$about = document.getElementById('about');
+$contact = document.getElementById('contact');
+
+
+function work(){
+  $work.className = "buttactive";
+  $about.className = "butt";
+  $contact.className = "butt";
+}
+
+function about(){
+  $work.className = "butt";
+  $about.className = "buttactive";
+  $contact.className = "butt";
+}
+
+function contact(){
+  $work.className = "butt";
+  $about.className = "butt";
+  $contact.className = "buttactive";
+}

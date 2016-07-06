@@ -79,8 +79,8 @@ a {
   text-decoration: none;
   white-space: nowrap;
   box-sizing: border-box;
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
   -webkit-transition-property: box-shadow, transform,background-color;
   transition-property: box-shadow, transform,background-color;
   -webkit-transform: translateZ(0);
@@ -90,9 +90,9 @@ a {
   box-shadow: 0px 4px 0px -1px black; }
 
 .butt:hover, .butt:active {
-  -webkit-box-shadow: 0px 4px 0px -1px black;
-  -moz-box-shadow: 0px 4px 0px -1px black;
-  box-shadow: 0px 4px 0px -1px black; }
+  -webkit-box-shadow: 0px 4px 0px -1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 4px 0px -1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 4px 0px -1px rgba(0, 0, 0, 0.5); }
 
 .tag:hover, .tag:active {
   background-color: #AA1130; }
@@ -122,7 +122,7 @@ a {
 .zero {
   font-family: 'Poppins';
   font-weight: 600;
-  font-size: 48px;
+  font-size: 32px;
   color: #000;
   padding-top: 3px;
   padding-bottom: 1px;
@@ -472,8 +472,6 @@ hr {
     display: inline;
     font-size: 12px;
     color: #e74c3c; }
-  .zero {
-    font-size: 32px; }
   .butt {
     font-size: 12px;
     min-width: 80px;
