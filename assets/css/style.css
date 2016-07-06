@@ -61,10 +61,38 @@ a {
   -webkit-transform: translateZ(0);
   transform: translateZ(0); }
 
+.buttactive {
+  color: #000;
+  font-family: "Poppins";
+  font-weight: 600;
+  background-color: #fff;
+  display: inline-block;
+  min-width: 90px;
+  height: 38px;
+  padding: 0 24px;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  box-sizing: border-box;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-property: box-shadow, transform,background-color;
+  transition-property: box-shadow, transform,background-color;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-box-shadow: 0px 4px 0px -1px black;
+  -moz-box-shadow: 0px 4px 0px -1px black;
+  box-shadow: 0px 4px 0px -1px black; }
+
 .butt:hover, .butt:active {
-  -webkit-box-shadow: 0px 3px 0px 0px black;
-  -moz-box-shadow: 0px 3px 0px 0px black;
-  box-shadow: 0px 3px 0px 0px black; }
+  -webkit-box-shadow: 0px 4px 0px -1px black;
+  -moz-box-shadow: 0px 4px 0px -1px black;
+  box-shadow: 0px 4px 0px -1px black; }
 
 .tag:hover, .tag:active {
   background-color: #AA1130; }
@@ -79,10 +107,11 @@ a {
   margin: 10px; }
 
 .10px {
+  position: relative;
   color: transparent;
-  padding: 10px;
-  margin: 10px;
-  height: 10px; }
+  padding-top: 100px;
+  margin: 100px;
+  height: 100px; }
 
 .purplehead {
   margin: auto;
@@ -95,7 +124,14 @@ a {
   font-weight: 600;
   font-size: 48px;
   color: #000;
-  padding-bottom: 4px; }
+  padding-top: 3px;
+  padding-bottom: 1px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-property: font-size;
+  transition-property: font-size;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0); }
 
 .subzero {
   font-family: 'Poppins';
@@ -109,29 +145,31 @@ body {
   background-size: 361px 361px;
   margin: 0px; }
 
-.header-home {
+.header-home2 {
+  z-index: 100;
+  position: fixed;
+  top: 0px;
   -webkit-box-shadow: 0px 10px 34px 0px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 10px 34px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 10px 34px 0px rgba(0, 0, 0, 0.1);
   background: #fff;
-  position: relative;
-  top: 0px;
   left: 0px;
   right: 0px;
   padding: 15px;
   padding-bottom: 2px;
   margin: auto;
+  margin-top: -10px;
   width: auto;
   font-weight: 800;
   font-size: 18px;
   color: #000; }
 
 .header-fixed {
+  position: fixed;
   -webkit-box-shadow: 0px 10px 34px 0px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 10px 34px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 10px 34px 0px rgba(0, 0, 0, 0.1);
   background: #fff;
-  position: relative;
   top: 0px;
   left: 0px;
   right: 0px;
@@ -171,12 +209,13 @@ body {
   font-weight: 800; }
 
 .card {
+  border-radius: 9px;
   display: inline-block;
   position: relative;
   margin: 10px;
   width: 320px;
   height: 160px;
-  box-shadow: 0px 2px 10px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 10px -3px rgba(0, 0, 0, 0.75);
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
   -webkit-transition-property: box-shadow, transform;
