@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,600);
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,800);
 input:focus, textarea:focus, button:focus {
   outline: none; }
@@ -35,19 +36,50 @@ a {
   -webkit-transform: translateZ(0);
   transform: translateZ(0); }
 
+.butt {
+  color: #000;
+  font-family: "Poppins";
+  font-weight: 600;
+  background-color: #fff;
+  display: inline-block;
+  min-width: 90px;
+  height: 38px;
+  padding: 0 24px;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  box-sizing: border-box;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-property: box-shadow, transform,background-color;
+  transition-property: box-shadow, transform,background-color;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0); }
+
+.butt:hover, .butt:active {
+  -webkit-box-shadow: 0px 3px 0px 0px black;
+  -moz-box-shadow: 0px 3px 0px 0px black;
+  box-shadow: 0px 3px 0px 0px black; }
+
 .tag:hover, .tag:active {
   background-color: #AA1130; }
 
 .dtext {
   position: relative;
   color: #fff;
-  font-family: 'League Spartan';
-  font-weight: 300;
+  font-family: 'Poppins';
+  font-weight: 600;
   font-size: 18px;
   padding-top: 0px;
   margin: 10px; }
 
 .10px {
+  color: transparent;
   padding: 10px;
   margin: 10px;
   height: 10px; }
@@ -59,13 +91,15 @@ a {
   background-image: linear-gradient(#4F173C 0%, #210B19 100%); }
 
 .zero {
-  padding-top: 16px;
-  font-family: 'League Spartan';
-  font-size: 60px;
-  color: #fff; }
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 48px;
+  color: #000;
+  padding-bottom: 4px; }
 
 .subzero {
-  font-family: 'League Spartan';
+  font-family: 'Poppins';
+  font-weight: 600;
   font-size: 16px;
   color: #FF6E0F; }
 
@@ -75,9 +109,28 @@ body {
   background-size: 361px 361px;
   margin: 0px; }
 
+.header-home {
+  -webkit-box-shadow: 0px 10px 34px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 10px 34px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 34px 0px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 15px;
+  padding-bottom: 2px;
+  margin: auto;
+  width: auto;
+  font-weight: 800;
+  font-size: 18px;
+  color: #000; }
+
 .header-fixed {
-  background: rgba(255, 0, 0, 0.1);
-  box-shadow: 0px 2px 10px -6px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 10px 34px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 10px 34px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 34px 0px rgba(0, 0, 0, 0.1);
+  background: #fff;
   position: relative;
   top: 0px;
   left: 0px;
@@ -85,20 +138,19 @@ body {
   padding: 15px;
   margin: auto;
   width: auto;
-  font-family: Roboto,Helvetica,sans-serif;
-  font-weight: 300;
+  font-weight: 800;
   font-size: 18px;
-  color: #fff; }
-
-.header-fixed a {
-  text-decoration: none; }
+  color: #000; }
 
 .header-fixed p {
-  font-family: 'League Spartan';
+  color: rgba(100, 50, 25, 0.75);
+  font-family: "Roboto";
   text-transform: uppercase;
-  padding-top: 6px;
   width: 710px;
   margin: auto; }
+
+.header-fixed a {
+  color: rgba(100, 50, 25, 0.75); }
 
 .blogcontainer {
   width: 100%;
@@ -120,11 +172,10 @@ body {
 
 .card {
   display: inline-block;
-  border-radius: 6px;
   position: relative;
   margin: 10px;
   width: 320px;
-  background-color: #fff;
+  height: 160px;
   box-shadow: 0px 2px 10px -6px rgba(0, 0, 0, 0.75);
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
@@ -140,7 +191,7 @@ body {
 
 .card img {
   padding-top: 0px;
-  border-radius: 6px 6px 0px 0px; }
+  border-radius: 8px; }
 
 .txt {
   width: 220px;
@@ -310,9 +361,9 @@ body {
   color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'League Spartan';
+  font-family: 'Poppins';
   letter-spacing: .01rem;
-  font-weight: 300;
+  font-weight: 600;
   font-style: normal;
   font-size: 20px;
   line-height: 1.58;
@@ -331,7 +382,7 @@ hr {
   body {
     background-size: 120px 120px; }
   .footer {
-    font-size: 12px;
+    font-size: 14px;
     position: relative; }
   .Gyan {
     margin-left: auto;
@@ -364,12 +415,13 @@ hr {
     padding-bottom: 20px; }
   .blogtxt .imgdesc {
     width: auto;
+    padding-top: 0px;
     margin: 12px; }
   .scale75 {
     transform: none; }
   .header-fixed p {
     width: auto;
-    padding-left: 4px; }
+    padding-left: 8px; }
   .UItext {
     margin-bottom: 0px;
     padding-top: 30px;
@@ -380,4 +432,10 @@ hr {
   .heart {
     display: inline;
     font-size: 12px;
-    color: #e74c3c; } }
+    color: #e74c3c; }
+  .zero {
+    font-size: 32px; }
+  .butt {
+    font-size: 12px;
+    min-width: 80px;
+    padding: 0 22px; } }
