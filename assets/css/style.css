@@ -129,9 +129,7 @@ a {
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
   -webkit-transition-property: font-size;
-  transition-property: font-size;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0); }
+  transition-property: font-size; }
 
 .subzero {
   font-family: 'Poppins';
@@ -475,4 +473,11 @@ hr {
   .butt {
     font-size: 12px;
     min-width: 80px;
-    padding: 0 22px; } }
+    padding: 0 22px; }
+  .buttactive {
+    font-size: 12px;
+    min-width: 80px;
+    padding: 0 22px; }
+  .zero {
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s; } }
