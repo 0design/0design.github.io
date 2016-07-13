@@ -1,40 +1,53 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:400,600);
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,800);
-input:focus, textarea:focus, button:focus {
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 400;
+  src: local(".SFNSText-Regular"), local(".HelveticaNeueDeskInterface-Regular"), local(".LucidaGrandeUI"), local("Ubuntu"), local("Segoe UI"), local("Roboto-Regular"), local("DroidSans"), local("Tahoma"); }
+
+input:focus,
+textarea:focus,
+button:focus {
   outline: none; }
 
 a {
   text-decoration: none; }
 
-.tags {
-  width: 710px;
-  margin: auto; }
+.author {
+  height: 90px;
+  margin: auto;
+  width: 710px; }
 
-.tag {
-  color: #FFF;
-  font-family: "Roboto";
+.author img {
+  height: 48px;
+  width: 48px !important; }
+
+.author .authorname {
+  transform: translate(56px, -57px);
+  color: #333;
+  width: 300px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: system;
+  letter-spacing: .01rem;
   font-weight: 800;
-  background-color: #ccc;
-  border-radius: 100px;
-  display: inline-block;
-  min-width: 90px;
-  height: 32px;
-  padding: 0 24px;
-  text-align: center;
-  font-size: 11px;
-  font-weight: 600;
-  line-height: 34px;
-  letter-spacing: .1rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  white-space: nowrap;
-  box-sizing: border-box;
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
-  -webkit-transition-property: box-shadow, transform,background-color;
-  transition-property: box-shadow, transform,background-color;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0); }
+  font-style: normal;
+  font-size: 14px;
+  line-height: .2em;
+  letter-spacing: -.003em; }
+
+.author .authorname .authorbio {
+  color: #999;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: system;
+  letter-spacing: .01rem;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  line-height: .25em;
+  letter-spacing: -.003em; }
 
 .butt {
   color: #000;
@@ -43,12 +56,12 @@ a {
   background-color: #fff;
   display: inline-block;
   min-width: 90px;
-  height: 38px;
-  padding: 0 24px;
+  height: 34px;
+  padding: 0 21px;
   text-align: center;
   font-size: 11px;
   font-weight: 600;
-  line-height: 34px;
+  line-height: 30px;
   letter-spacing: .1rem;
   text-transform: uppercase;
   text-decoration: none;
@@ -56,8 +69,11 @@ a {
   box-sizing: border-box;
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
-  -webkit-transition-property: box-shadow, transform,background-color;
-  transition-property: box-shadow, transform,background-color;
+  -webkit-transition-property: box-shadow, transform, background-color;
+  -webkit-transition-property: box-shadow, background-color, -webkit-transform;
+  transition-property: box-shadow, background-color, -webkit-transform;
+  transition-property: box-shadow, transform, background-color;
+  transition-property: box-shadow, transform, background-color, -webkit-transform;
   -webkit-transform: translateZ(0);
   transform: translateZ(0); }
 
@@ -68,12 +84,12 @@ a {
   background-color: #fff;
   display: inline-block;
   min-width: 90px;
-  height: 38px;
-  padding: 0 24px;
+  height: 34px;
+  padding: 0 21px;
   text-align: center;
   font-size: 11px;
   font-weight: 600;
-  line-height: 34px;
+  line-height: 30px;
   letter-spacing: .1rem;
   text-transform: uppercase;
   text-decoration: none;
@@ -81,21 +97,18 @@ a {
   box-sizing: border-box;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  -webkit-transition-property: box-shadow, transform,background-color;
-  transition-property: box-shadow, transform,background-color;
+  -webkit-transition-property: box-shadow, transform, background-color;
+  -webkit-transition-property: box-shadow, background-color, -webkit-transform;
+  transition-property: box-shadow, background-color, -webkit-transform;
+  transition-property: box-shadow, transform, background-color;
+  transition-property: box-shadow, transform, background-color, -webkit-transform;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  -webkit-box-shadow: 0px 4px 0px -1px black;
-  -moz-box-shadow: 0px 4px 0px -1px black;
   box-shadow: 0px 4px 0px -1px black; }
 
-.butt:hover, .butt:active {
-  -webkit-box-shadow: 0px 4px 0px -1px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0px 4px 0px -1px rgba(0, 0, 0, 0.5);
+.butt:hover,
+.butt:active {
   box-shadow: 0px 4px 0px -1px rgba(0, 0, 0, 0.5); }
-
-.tag:hover, .tag:active {
-  background-color: #AA1130; }
 
 .dtext {
   position: relative;
@@ -106,17 +119,14 @@ a {
   padding-top: 0px;
   margin: 10px; }
 
-.10px {
-  position: relative;
-  color: transparent;
-  padding-top: 100px;
-  margin: 100px;
-  height: 100px; }
+.page {
+  margin-top: 110px; }
 
 .purplehead {
   margin: auto;
   height: 148px;
   width: auto;
+  background-image: -webkit-linear-gradient(#4F173C 0%, #210B19 100%);
   background-image: linear-gradient(#4F173C 0%, #210B19 100%); }
 
 .zero {
@@ -138,23 +148,19 @@ a {
   color: #FF6E0F; }
 
 body {
-  background-image: url("../../assets/img/bg.png");
-  background-attachment: fixed;
-  background-size: 361px 361px;
+  background: #f3f3f3;
   margin: 0px; }
 
 .header-home2 {
+  border-bottom: 1px solid #ccc;
   z-index: 100;
   position: fixed;
   top: 0px;
-  -webkit-box-shadow: 0px 10px 34px 0px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0px 10px 34px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 10px 34px 0px rgba(0, 0, 0, 0.1);
   background: #fff;
   left: 0px;
   right: 0px;
   padding: 15px;
-  padding-bottom: 2px;
+  padding-bottom: 0px;
   margin: auto;
   margin-top: -10px;
   width: auto;
@@ -163,32 +169,48 @@ body {
   color: #000; }
 
 .header-fixed {
+  z-index: 100;
   position: fixed;
-  -webkit-box-shadow: 0px 10px 34px 0px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0px 10px 34px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 10px 34px 0px rgba(0, 0, 0, 0.1);
-  background: #fff;
+  border-bottom: 1px solid #ddd;
+  background: #f9f9f9;
+  font-weight: 300;
   top: 0px;
   left: 0px;
   right: 0px;
   padding: 15px;
   margin: auto;
   width: auto;
-  font-weight: 800;
+  font-weight: 300;
   font-size: 18px;
-  color: #000; }
+  color: #333; }
 
 .header-fixed p {
-  color: rgba(100, 50, 25, 0.75);
-  font-family: "Roboto";
-  text-transform: uppercase;
+  color: #333;
+  font-family: system, sans-serif;
   width: 710px;
+  font-weight: 300;
   margin: auto; }
 
 .header-fixed a {
-  color: rgba(100, 50, 25, 0.75); }
+  color: #333;
+  text-shadow: 0 0 0 #fff, .05em .05em 0 #fff, 0 0, -.05em .05em 0 #fff;
+  /*  gradient background allows us to use css only & re-position it  */
+  background: -webkit-linear-gradient(#333, #000) center 1.1em no-repeat;
+  background: linear-gradient(#333, #000) center 1.1em no-repeat;
+  /*  can precisely control size in relation to the text  */
+  background-size: 100% 1px;
+  /*  now the underline supports transitions  */
+  -webkit-transition-property: background-size;
+  transition-property: background-size;
+  -webkit-transition: .2s ease;
+  transition: .2s ease; }
+
+.header-fixed a:hover {
+  /*  backgrounds won't size larger than 100%  */
+  background-size: 100% 2px; }
 
 .blogcontainer {
+  border-bottom: 1px solid #ddd;
   width: 100%;
   background: #fff;
   margin: auto; }
@@ -202,7 +224,7 @@ body {
 .Gyan {
   margin-left: 132px;
   margin-top: 36px;
-  font-family: Roboto;
+  font-family: system, Roboto;
   font-size: 40px;
   font-weight: 800; }
 
@@ -213,16 +235,22 @@ body {
   margin: 10px;
   width: 320px;
   height: 160px;
-  box-shadow: 0px 2px 10px -3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.4);
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
   -webkit-transition-property: box-shadow, transform;
+  -webkit-transition-property: box-shadow, -webkit-transform;
+  transition-property: box-shadow, -webkit-transform;
   transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform, -webkit-transform;
   -webkit-transform: translateZ(0);
   transform: translateZ(0); }
 
-.card:hover, .card:active {
-  box-shadow: 0 7px 20px -4px rgba(0, 0, 0, 0.25);
+.card:hover,
+.card:active {
+  box-shadow: 0 3px 0px 0px rgba(0, 0, 0, 0.2);
   -webkit-transform: scale(1.05);
   transform: scale(1.05); }
 
@@ -232,14 +260,14 @@ body {
 
 .txt {
   width: 220px;
-  font-family: Roboto,Helvetica,sans-serif;
+  font-family: system, Roboto, Helvetica, sans-serif;
   font-weight: 300;
   font-size: 18px;
   position: relative;
   text-align: center;
   padding-top: 4px;
   margin-bottom: 6px;
-  color: rgba(0, 0, 0, 0.75); }
+  color: #000; }
 
 .blogtitle {
   padding-top: 120px;
@@ -248,7 +276,7 @@ body {
   color: #333;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: Roboto,Helvetica,sans-serif;
+  font-family: system, Roboto, Helvetica, sans-serif;
   letter-spacing: .01rem;
   font-weight: 700;
   font-style: normal;
@@ -263,7 +291,7 @@ body {
   color: #333;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: Roboto,Helvetica,sans-serif;
+  font-family: system, Roboto, Helvetica, sans-serif;
   letter-spacing: .01rem;
   font-weight: 700;
   font-style: normal;
@@ -275,13 +303,13 @@ body {
   margin: auto;
   width: 710px;
   margin-top: 4px;
-  color: rgba(0, 0, 0, 0.44);
+  color: rgba(0, 0, 0, 0.6);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: Roboto,Helvetica,sans-serif;
+  font-family: system;
   letter-spacing: .01rem;
-  font-weight: 300;
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 18px;
   letter-spacing: -.003em; }
 
 .blogtxt {
@@ -294,7 +322,7 @@ body {
 .blogtxt p {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: Georgia,Cambria,"Times New Roman",Times,serif;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   letter-spacing: -0.01em;
   font-weight: 400;
   font-size: 20px;
@@ -306,7 +334,7 @@ body {
 .blogtxt .imgdesc {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: Roboto,Helvetica,sans-serif;
+  font-family: system, Roboto, Helvetica, sans-serif;
   letter-spacing: -0.01em;
   font-weight: 400;
   text-align: center;
@@ -325,17 +353,18 @@ body {
   text-shadow: -0.04167em -0.04167em 0 #F0F0F0, -0.04167em -0.02083em 0 #F0F0F0, -0.04167em 0em 0 #F0F0F0, -0.04167em 0.02083em 0 #F0F0F0, -0.04167em 0.04167em 0 #F0F0F0, -0.02083em -0.04167em 0 #F0F0F0, -0.02083em -0.02083em 0 #F0F0F0, -0.02083em 0em 0 #F0F0F0, -0.02083em 0.02083em 0 #F0F0F0, -0.02083em 0.04167em 0 #F0F0F0, 0em -0.04167em 0 #F0F0F0, 0em -0.02083em 0 #F0F0F0, 0em 0em 0 #F0F0F0, 0em 0.02083em 0 #F0F0F0, 0em 0.04167em 0 #F0F0F0, 0.02083em -0.04167em 0 #F0F0F0, 0.02083em -0.02083em 0 #F0F0F0, 0.02083em 0em 0 #F0F0F0, 0.02083em 0.02083em 0 #F0F0F0, 0.02083em 0.04167em 0 #F0F0F0, 0.04167em -0.04167em 0 #F0F0F0, 0.04167em -0.02083em 0 #F0F0F0, 0.04167em 0em 0 #F0F0F0, 0.04167em 0.02083em 0 #F0F0F0, 0.04167em 0.04167em 0 #F0F0F0; }
 
 .footer {
-  font-family: Roboto,Helvetica,sans-serif;
+  border-top: 1px solid #ddd;
+  font-family: system, sans-serif;
   font-weight: 300;
-  background: #333333;
+  background: #fff;
   width: auto;
-  color: #fff;
+  color: #000;
   height: auto;
   position: relative;
   bottom: 0;
   margin: 0px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   left: 0px;
   right: 0px;
   text-align: center;
@@ -355,7 +384,7 @@ body {
   text-align: center;
   text-decoration: none;
   font-size: 20px;
-  font-family: Roboto,Helvetica,sans-serif;
+  font-family: system, Roboto, Helvetica, sans-serif;
   font-weight: 900;
   display: inline-block;
   vertical-align: middle;
@@ -368,9 +397,13 @@ body {
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transition-property: box-shadow, transform;
-  transition-property: box-shadow, transform; }
+  -webkit-transition-property: box-shadow, -webkit-transform;
+  transition-property: box-shadow, -webkit-transform;
+  transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform, -webkit-transform; }
 
-.hvr-grow-shadow:hover, .hvr-grow-shadow:active {
+.hvr-grow-shadow:hover,
+.hvr-grow-shadow:active {
   box-shadow: 0px 3px 34px -4px rgba(0, 0, 0, 0.5);
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
@@ -385,9 +418,11 @@ body {
   display: inline;
   margin: 20px;
   padding: 20px;
+  -ms-flex-line-pack: justify;
   align-content: space-between; }
 
 .scale75 {
+  -webkit-transform: scale(0.75, 0.75);
   transform: scale(0.75, 0.75); }
 
 /*gyanl*/
@@ -395,7 +430,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   padding-top: 44px;
-  color: #fff;
+  color: #000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Poppins';
@@ -413,12 +448,10 @@ hr {
 
 /* MOBILE RULES */
 @media only screen and (max-width: 768px) {
-  .tags {
-    width: auto;
-    padding-left: 16px; }
   body {
     background-size: 120px 120px; }
   .footer {
+    margin-top: 24px;
     font-size: 14px;
     position: relative; }
   .Gyan {
@@ -438,12 +471,17 @@ hr {
     width: 90%;
     margin: auto; }
   .blogsubtitle {
-    padding-top: 14px;
+    padding-top: 8px;
     width: 90%;
     margin: auto; }
   .blogtxt {
     margin: auto;
     padding-bottom: 20px; }
+  .author {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: -30px; }
   .blogtxt p {
     margin: auto;
     width: 90%;
@@ -455,7 +493,10 @@ hr {
     padding-top: 0px;
     margin: 12px; }
   .scale75 {
+    -webkit-transform: none;
     transform: none; }
+  .header-fixed {
+    position: relative; }
   .header-fixed p {
     width: auto;
     padding-left: 8px; }
