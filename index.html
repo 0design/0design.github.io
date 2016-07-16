@@ -15,7 +15,16 @@
 
 <body id="index" class="index">
 
+<script type="text/javascript">var win = window,
+    docEl = document.documentElement,
+    $logo = document.getElementById('dis');
 
+win.onscroll = function(){
+   var sTop = (this.pageYOffset || docEl.scrollTop)  - (docEl.clientTop || 0);
+   $logo.style.fontSize =  sTop > 10 ? "0":"32px" ;
+};
+
+window.onload = init();</script>
 <div class="header-home2">
     <center>  <div id=dis class="zero">
 Raghav + Gyan
