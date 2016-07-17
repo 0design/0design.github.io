@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Karla:700);
+@import url(https://fonts.googleapis.com/css?family=Dosis:700);
 @font-face {
   font-family: system;
   font-style: normal;
@@ -50,6 +51,7 @@ a {
   letter-spacing: -.003em; }
 
 .butt {
+  pointer-events: all;
   color: #000;
   font-family: "Karla";
   font-weight: 700;
@@ -78,6 +80,7 @@ a {
   transform: translateZ(0); }
 
 .buttactive {
+  pointer-events: all;
   color: #000;
   font-family: "Karla";
   font-weight: 600;
@@ -130,8 +133,8 @@ a {
   background-image: linear-gradient(#4F173C 0%, #210B19 100%); }
 
 .zero {
-  font-family: 'Karla';
-  font-weight: 600;
+  font-family: 'Dosis';
+  font-weight: 700;
   font-size: 32px;
   color: #000;
   padding-top: 3px;
@@ -185,6 +188,7 @@ body {
   color: #333; }
 
 .down-header {
+  pointer-events: none;
   transform: translateX(277px);
   z-index: 101;
   position: fixed;
