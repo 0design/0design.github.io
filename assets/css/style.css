@@ -770,7 +770,7 @@ hr {
     transform: none; }
   .footer {
     margin-top: 24px;
-    font-size: 14px;
+    font-size: 12px;
     position: relative; }
   .Gyan {
     margin-left: auto;
@@ -854,5 +854,12 @@ hr {
     transform: translateX(0px); }
   .dtext3 {
     font-size: 36px; }
+  .magictext {
+    top: 40%; }
   .magic {
-    height: 75vh; } }
+    height: 81vh;
+    margin-top: -50px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: -30px;
+    border-radius: 0px; } }
