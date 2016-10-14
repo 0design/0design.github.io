@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Karla:700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:700);
 @import url(https://fonts.googleapis.com/css?family=Dosis:700);
 @font-face {
   font-family: system;
@@ -96,6 +96,69 @@ button:focus {
 
 a {
   text-decoration: none; }
+
+.name {
+  margin-top: 4px;
+  font-family: system,Dosis,Helvetica,Roboto,sans-serif;
+  color: #333;
+  font-size: 24px;
+  font-weight: 700; }
+
+.position {
+  color: #000;
+  padding-top: 6px;
+  padding-bottom: 10px;
+  font-family: system,Roboto,Helvetica,sans-serif;
+  font-size: 14px;
+  font-weight: 400; }
+
+.person {
+  min-width: 320px;
+  max-width: 400px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 40vw;
+  display: inline-block;
+  margin: 0; }
+
+.person img:hover,
+.person img:active {
+  -webkit-box-shadow: 0px 0px 0px 6px #e74c3c;
+  -moz-box-shadow: 0px 0px 0px 6px #e74c3c;
+  box-shadow: 0px 0px 0px 6px #e74c3c;
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05); }
+
+.person img {
+  margin-top: 20px;
+  width: 200px;
+  height: 200px;
+  padding-top: 0px;
+  border-radius: 100px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-property: box-shadow, transform;
+  -webkit-transition-property: box-shadow, -webkit-transform;
+  transition-property: box-shadow, -webkit-transform;
+  transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform, -webkit-transform;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0); }
+
+.buttonic {
+  background-color: #fff;
+  border-radius: 100px;
+  color: #333;
+  margin-top: 10px;
+  width: 72px;
+  align-items: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: system;
+  font-weight: 900;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px; }
 
 @-moz-keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
@@ -221,7 +284,7 @@ a {
 .butt {
   pointer-events: all;
   color: #000;
-  font-family: "Karla";
+  font-family: "system";
   font-weight: 700;
   background-color: #fff;
   display: inline-block;
@@ -250,7 +313,7 @@ a {
 .buttactive {
   pointer-events: all;
   color: #000;
-  font-family: "Karla";
+  font-family: "system";
   font-weight: 600;
   background-color: #fff;
   display: inline-block;
@@ -283,12 +346,40 @@ a {
 
 .dtext {
   position: relative;
-  color: #fff;
-  font-family: 'Karla';
+  color: #333;
+  font-family: 'system';
   font-weight: 700;
-  font-size: 18px;
-  padding-top: 0px;
-  margin: 10px; }
+  font-size: 24px;
+  margin: 20px;
+  margin-bottom: 0px; }
+
+.dtext2 {
+  padding: 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  margin: auto;
+  max-width: 710px;
+  padding-top: 16px; }
+
+.dtext3 {
+  text-shadow: 0px 2px 2px rgba(150, 150, 150, 0.45);
+  color: #fff !important;
+  padding: 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 1.5;
+  margin: auto;
+  max-width: 710px;
+  padding-top: 16px; }
 
 .purplehead {
   margin: auto;
@@ -310,7 +401,7 @@ a {
   transition-property: font-size; }
 
 .subzero {
-  font-family: 'Karla';
+  font-family: 'system';
   font-weight: 700;
   font-size: 16px;
   color: #FF6E0F; }
@@ -320,6 +411,7 @@ body {
   margin: 0px; }
 
 .header-home2 {
+  position: fixed;
   border-bottom: 1px solid #ccc;
   z-index: 100;
   top: 0px;
@@ -595,7 +687,8 @@ body {
 
 .hvr-grow-shadow:hover,
 .hvr-grow-shadow:active {
-  box-shadow: 0px 3px 34px -4px rgba(0, 0, 0, 0.5);
+  color: #e74c3c;
+  box-shadow: 0px 3px 34px -4px #e74c3c;
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
   outline: none; }
@@ -617,6 +710,37 @@ body {
   transform: scale(0.75, 0.75); }
 
 /*gyanl*/
+.magic {
+  border-radius: 10px;
+  height: 80vh;
+  margin-top: 0px;
+  margin-right: 36px;
+  margin-left: 36px;
+  margin-left: 36px;
+  background-image: url("http://data.whicdn.com/images/121606684/large.jpg");
+  background-size: cover; }
+
+.plane {
+  z-index: 0;
+  background-image: url("../img/plane.gif");
+  background-size: contain;
+  width: 250px;
+  height: 250px; }
+
+.plane2 {
+  z-index: 0;
+  background-image: url("../img/plane2.gif");
+  background-size: contain;
+  width: 150px;
+  height: 150px; }
+
+.magictext {
+  z-index: 1;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%); }
+
 .UItext {
   text-align: center;
   text-transform: uppercase;
@@ -624,7 +748,7 @@ body {
   color: #000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Karla';
+  font-family: 'system';
   letter-spacing: .01rem;
   font-weight: 600;
   font-style: normal;
@@ -727,4 +851,8 @@ hr {
   .down-header {
     border-bottom: 1px solid #ddd;
     background: #fff;
-    transform: translateX(0px); } }
+    transform: translateX(0px); }
+  .dtext3 {
+    font-size: 36px; }
+  .magic {
+    height: 75vh; } }
