@@ -375,6 +375,15 @@ a {
   max-width: 710px;
   padding-top: 16px; }
 
+.dtext4 {
+  position: relative;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  margin: 20px;
+  margin-bottom: -20px; }
+
 .purplehead {
   margin: auto;
   height: 148px;
@@ -705,10 +714,10 @@ body {
 
 /*gyanl*/
 .magic {
+  background-image: url("http://gradientwindowfilms.com/wp-content/uploads/2014/06/Sky-Series-Eric-Cahan05.jpg");
   height: 100vh;
   margin-top: 50px;
   margin-bottom: -50px;
-  background-image: url("http://data.whicdn.com/images/121606684/large.jpg");
   background-size: cover; }
 
 .plane {
@@ -728,7 +737,7 @@ body {
 .magictext {
   z-index: 1;
   position: absolute;
-  top: 45%;
+  top: 42%;
   left: 50%;
   transform: translateX(-50%); }
 
@@ -848,9 +857,4 @@ hr {
   .magictext {
     top: 40%; }
   .magic {
-    height: 81vh;
-    margin-top: -50px;
-    margin-right: 0px;
-    margin-left: 0px;
-    margin-bottom: -30px;
-    border-radius: 0px; } }
+    height: 100vh; } }
