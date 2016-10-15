@@ -46,6 +46,7 @@
    </head>
    <body id="index" class="index">
 
+<script src="assets/js/smooth-scroll.js"></script>
 <div class="header-home2">
     <center>  <div id=dis class="zero">
       0DESIGN.CO
@@ -66,11 +67,11 @@
     <div class="logo">0DESIGN</div>
     Good design is as little design as possible.
   </div>
-  <div class="arrow bounce"></div>
+  <a data-scroll href="#footer"><div class="arrow bounce"></div></a>
 </div>
   <center>
     <div class="zero">
-      <P>WORK
+      <p id="work">WORK</p>
     </div>
     <a href="pmo.html">
 		      <div class="card">
@@ -166,7 +167,9 @@
 </body>
 </html>
 
-
+  <script>
+      smoothScroll.init();
+  </script>
 	<script src="/assets/js/script.js"></script>
 </body>
 </html>

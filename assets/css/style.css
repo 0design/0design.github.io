@@ -857,4 +857,6 @@ hr {
   .magictext {
     top: 40%; }
   .magic {
-    height: 100vh; } }
+    height: 100vh; }
+  .taare {
+    display: none; } }
