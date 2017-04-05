@@ -224,12 +224,12 @@ a {
   padding-bottom: 1px; }
 
 .centerthis {
-  -webkit-animation-name: fadetop;
+  -webkit-animation-name: .5s fadetop;
   /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: .5s ease;
   /* Safari 4.0 - 8.0 */
   animation-name: fadetop;
-  animation-duration: 2s;
+  animation-duration: .5s;
   position: fixed;
   color: rgba(255, 255, 255, 0.9);
   padding: 10vw;
