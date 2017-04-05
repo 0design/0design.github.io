@@ -224,12 +224,12 @@ a {
   padding-bottom: 1px; }
 
 .centerthis {
-  -webkit-animation-name: .5s fadetop;
+  -webkit-animation-name: fadetop;
   /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: .5s ease;
   /* Safari 4.0 - 8.0 */
   animation-name: fadetop;
-  animation-duration: .5s;
+  animation-duration: 2s;
   position: fixed;
   color: rgba(255, 255, 255, 0.9);
   padding: 10vw;
@@ -546,7 +546,7 @@ body {
   border-radius: 9px;
   display: inline-block;
   position: relative;
-  margin: 10px;
+  margin: 5px 5px 10px 5px;
   width: 320px;
   height: 160px;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.4);
@@ -562,9 +562,9 @@ body {
 
 .card:hover,
 .card:active {
-  box-shadow: 0 3px 0px 0px rgba(0, 0, 0, 0.2);
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05); }
+  box-shadow: 0 3px 1px 1px rgba(0, 0, 0, 0.2);
+  -webkit-transform: scale(0.95);
+  transform: scale(0.95); }
 
 .card img {
   padding-top: 0px;
